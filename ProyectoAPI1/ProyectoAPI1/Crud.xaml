@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAPI1.Crud">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Registro Universitario"
+                   FontSize="Title" Padding="30, 10, 30, 10"/>
+
+            <Label x:Name="lblMensaje" 
+               Text="" FontSize="35" 
+               Padding="30,0,30,0"/>
+
+            <Entry x:Name="txtCedula" Placeholder="Cedula" ></Entry>
+
+            <Entry x:Name="txtNombre"
+                    Placeholder="Nombre" ></Entry>
+
+            <Entry x:Name="txtDireccion" 
+                   Placeholder="Direccion" ></Entry>
+
+            <Entry x:Name="txtTelefono" 
+                    Placeholder="Telefono" ></Entry>
+
+            <Entry x:Name="txtCitaFecha"
+                   Placeholder="Cita" ></Entry>
+
+            <Button Text="Insertar"  Clicked="cmdInsert_Clicked" ></Button>
+            <Button Text="Modificar" Clicked="cmdUpdate_Clicked"></Button>
+            <Button Text="Leer" Clicked="cmdReadOne_Clicked"></Button>
+            <Button Text="Eliminar" Clicked="cmdDelete_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
